@@ -1,0 +1,81 @@
+.single{
+  display: flex;
+  width: 100%;
+
+  .singleContainer{
+    flex:6;
+
+    .Top{
+      padding: 20px;
+      display: flex;
+      gap: 20px;
+
+      .left{
+        flex: 1;
+        box-shadow: 2px 15px 32px 2px rgba(107,91,91,0.45);
+  -webkit-box-shadow: 2px 15px 32px 2px rgba(107,91,91,0.45);
+  -moz-box-shadow: 2px 15px 32px 2px rgba(107,91,91,0.45);
+  padding: 10px;
+  position: relative;
+
+        .editButton{
+          position: absolute;
+          top: 0;
+          right: 0;
+          font-size: 12px;
+          padding: 5px;
+          color: #7451f8;
+          background: #7551f825;
+          cursor: pointer;
+          border-radius: 0 0 0 5px;
+        }
+
+        .item{
+          display: flex;
+          gap: 20px;
+
+          .itemImage{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+
+          .details{
+
+            .itemTitle{
+              margin-bottom: 10px;
+              color: #555;
+            }
+
+            .detailItem{
+              margin-bottom: 10px;
+              font-size: 14px;
+
+              .itemKey{
+                color: gray;
+                font-weight: bold;
+                margin-right: 5px;
+              }
+
+              .itemValue{
+                font-weight: 300;
+                
+              }
+            }
+          }
+        }
+
+      }
+
+      .right{
+        flex: 2;
+      }
+    }
+  }
+  .title{
+    font-weight: 16px;
+    color: lightgray;
+    margin-bottom: 20px;
+  }
+}

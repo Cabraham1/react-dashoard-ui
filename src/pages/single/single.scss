@@ -15,8 +15,9 @@
         box-shadow: 2px 15px 32px 2px rgba(107,91,91,0.45);
   -webkit-box-shadow: 2px 15px 32px 2px rgba(107,91,91,0.45);
   -moz-box-shadow: 2px 15px 32px 2px rgba(107,91,91,0.45);
-  padding: 10px;
+  padding: 20px;
   position: relative;
+  
 
         .editButton{
           position: absolute;
@@ -46,6 +47,7 @@
             .itemTitle{
               margin-bottom: 10px;
               color: #555;
+              font-size: 20px;
             }
 
             .detailItem{
@@ -70,12 +72,21 @@
 
       .right{
         flex: 2;
+        
       }
     }
-  }
-  .title{
-    font-weight: 16px;
-    color: lightgray;
-    margin-bottom: 20px;
+    .bottom{
+      box-shadow: 2px 15px 32px 2px rgba(107,91,91,0.45);
+      -webkit-box-shadow: 2px 15px 32px 2px rgba(107,91,91,0.45);
+      -moz-box-shadow: 2px 15px 32px 2px rgba(107,91,91,0.45);
+      
+      padding: 20px;
+      margin: 10px 20px; 
+    }
+    .title{
+      font-weight: 16px;
+      color: lightgray;
+      margin-bottom: 20px;
+    }
   }
 }

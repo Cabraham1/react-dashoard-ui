@@ -8,29 +8,27 @@ import List from '../../components/table/Table'
 
 const Home = () => {
   return (
-    <div className='home'>
-      <Sidebar/>  
+    <div className="home">
+      <Sidebar />
       <div className="home__container">
-        <NavBar/>
-      <div className="widgets">
-        <Widget type='user'/>
-        <Widget type='order'/>
-        <Widget type='earning'/>
-        <Widget type='balance'/>
-      </div>
-      <div className="chart__container">
-        <Featured />
-        <Chart />
-      </div>
-      <div className="listContanier">
-        <div className="listTitle">
-          latest Transactions
+        <NavBar />
+        <div className="widgets">
+          <Widget type="user" />
+          <Widget type="order" />
+          <Widget type="earning" />
+          <Widget type="balance" />
         </div>
-        <List />
+        <div className="chart__container">
+          <Featured />
+          <Chart aspect={2 / 1} title="User spending (last 6 months)" />
+        </div>
+        <div className="listContanier">
+          <div className="listTitle">latest Transactions</div>
+          <List />
+        </div>
       </div>
-      </div>    
     </div>
-  )
+  );
 }
 
 export default Home

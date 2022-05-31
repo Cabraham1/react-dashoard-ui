@@ -4,8 +4,7 @@ import Navbar from "../../components/navBar/NavBar";
 import Sidebar from "../../components/sideBar/Sidebar"
 import userImg  from "../../assets/abraham.jpg";
 import Chart from "../../components/chart/Chart";
-
-
+import List from '../../components/table/Table';
 const Single = () => {
   return (
     <div className="single">
@@ -44,10 +43,13 @@ const Single = () => {
             </div>
           </div>
           <div className="right">
-            <Chart aspect ={3/1}/>
+            <Chart aspect={3 / 1} title="User spending (last 6 months)" />
           </div>
         </div>
-        <div className="bottom"></div>
+        <div className="bottom">
+          <h1 className='title'>last transaction</h1>
+          <List />
+        </div>
       </div>
     </div>
   );
